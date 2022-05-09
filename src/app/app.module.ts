@@ -8,7 +8,7 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
-import { FoodPageComponent } from './food-page/food-page.component';
+import { WoodPageComponent } from './woods/wood-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -22,7 +22,7 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     SearchComponent,
     TagsComponent,
-    FoodPageComponent,
+    WoodPageComponent,
     CartPageComponent,
     NotFoundComponent,
     CheckoutComponent,

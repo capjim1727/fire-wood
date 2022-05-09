@@ -1,4 +1,4 @@
-export class Food{
+export class Wood{
     id!:number;
     name!:string;
     price!:number;

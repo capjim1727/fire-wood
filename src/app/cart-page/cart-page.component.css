@@ -90,11 +90,11 @@ ul .remove-button:hover{
     align-items: flex-start;
 }
 
-.checkout .foods-count{
+.checkout .woods-count{
     margin-bottom: 1.5rem;
 }
 
-.checkout .foods-count::before{
+.checkout .woods-count::before{
     content: 'Count: ';
     color: grey;
 }

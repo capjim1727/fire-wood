@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FoodService } from '../services/food/food.service';
-import { Food } from '../shared/models/food';
+import { WoodService } from '../services/wood/wood.service';
+import { Wood } from '../shared/models/wood';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,17 +10,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  foods:Food[] = [];
-  constructor(private foodService:FoodService, private route:ActivatedRoute) { }
+  woods:Wood[] = [];
+  constructor(private woodService:WoodService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       if (params['searchTerm'])
-        this.foods = this.foodService.getAllFoodsBySearchTerm(params['searchTerm']);
+        this.woods = this.woodService.getAllWoodsBySearchTerm(params['searchTerm']);
       else if(params['tag'])
-      this.foods = this.foodService.getAllFoodsByTag(params['tag']);
+      this.woods = this.woodService.getAllWoodsByTag(params['tag']);
       else
-      this.foods = this.foodService.getAll();
+      this.woods = this.woodService.getAll();
     })    
   }
 }

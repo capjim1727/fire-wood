@@ -19,13 +19,13 @@ export class CartPageComponent implements OnInit {
   }
   
   removeFromCart(cartItem:CartItem) {
-    this.cartService.removeFromCart(cartItem.food.id);
+    this.cartService.removeFromCart(cartItem.wood.id);
     this.setCart();
   }
 
   changeQuantity(cartItem:CartItem, quantityInString:string) {
     const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.food.id, quantity);
+    this.cartService.changeQuantity(cartItem.wood.id, quantity);
     this.setCart();
   }
 

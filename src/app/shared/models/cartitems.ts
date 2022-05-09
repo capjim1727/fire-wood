@@ -1,13 +1,13 @@
-import { Food } from "./food";
+import { Wood } from "./wood";
 
 export class CartItem {
-    constructor(food:Food){
-        this.food = food;
+    constructor(wood:Wood){
+        this.wood = wood;
     }
-    food:Food;
+    wood:Wood;
     quantity:number = 1;
 
     get price():number{
-        return this.food.price * this.quantity;
+        return this.wood.price * this.quantity;
     }
 }

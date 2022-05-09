@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FoodPageComponent } from './food-page.component';
+import { WoodPageComponent } from './wood-page.component';
 
-describe('FoodPageComponent', () => {
-  let component: FoodPageComponent;
-  let fixture: ComponentFixture<FoodPageComponent>;
+describe('WoodPageComponent', () => {
+  let component: WoodPageComponent;
+  let fixture: ComponentFixture<WoodPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FoodPageComponent ]
+      declarations: [ WoodPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FoodPageComponent);
+    fixture = TestBed.createComponent(WoodPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

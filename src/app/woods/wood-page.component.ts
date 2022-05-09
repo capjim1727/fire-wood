@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { Food } from '../shared/models/food';
+import { WoodService } from '../services/wood/wood.service';
+import { Wood } from '../shared/models/wood';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FoodService } from '../services/food/food.service';
 import { CartService } from '../services/cart/cart.service';
 
 @Component({
-  selector: 'app-food-page',
-  templateUrl: './food-page.component.html',
-  styleUrls: ['./food-page.component.css']
+  selector: 'app-wood-page',
+  templateUrl: './wood-page.component.html',
+  styleUrls: ['./wood-page.component.css']
 })
-export class FoodPageComponent implements OnInit {
+export class WoodPageComponent implements OnInit {
 
-  food!: Food;
+  wood!: Wood;
   constructor(private activatedRoute:ActivatedRoute, 
-    private foodService: FoodService,
+    private woodService: WoodService,
     private cartService: CartService,
     private router: Router) {
     activatedRoute.params.subscribe((params) => {
       if(params['id'])
-      this.food = foodService.getFoodById(params['id']);
+      this.wood = woodService.getWoodById(params['id']);
     })
    }
 
@@ -26,7 +26,7 @@ export class FoodPageComponent implements OnInit {
   }
 
   addToCart() {
-    this.cartService.addToCart(this.food);
+    this.cartService.addToCart(this.wood);
     this.router.navigateByUrl('/cart-page');
   }
     

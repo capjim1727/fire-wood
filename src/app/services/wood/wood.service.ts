@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Food } from 'src/app/shared/models/food';
+import { Wood } from 'src/app/shared/models/wood';
 import { Tag } from 'src/app/shared/models/tags';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FoodService {
+export class WoodService {
 
   constructor() { }
 
-  getFoodById(id: number): Food {
-    return this.getAll().find(food => food.id == id)!;
+  getWoodById(id: number): Wood {
+    return this.getAll().find(wood => wood.id == id)!;
   }
 
-  getAllFoodsBySearchTerm(searchTerm:string) :Food[] {
-    return this.getAll().filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  getAllWoodsBySearchTerm(searchTerm:string) :Wood[] {
+    return this.getAll().filter(wood => wood.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
 
   getAllTags(): Tag[] {
@@ -26,13 +26,13 @@ export class FoodService {
     ];
   }
 
-  getAllFoodsByTag(tag: string): Food[] {
+  getAllWoodsByTag(tag: string): Wood[] {
     return tag == "All" ?
     this.getAll() :
-    this.getAll().filter(food => food.tags?.includes(tag));
+    this.getAll().filter(wood => wood.tags?.includes(tag));
   }
 
-  getAll(): Food[] {
+  getAll(): Wood[] {
     return [
       { 
         id: 1,
