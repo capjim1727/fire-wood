@@ -1,0 +1,6 @@
+.pic, h1 {
+    font: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -13,6 +13,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
+import { MapComponent } from './map/map.component';
+import { DisplayComponent } from './display/display.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     NotFoundComponent,
     CheckoutComponent,
     FooterComponent,
+    MapComponent,
+    DisplayComponent,
   ],
   imports: [
     BrowserModule,
