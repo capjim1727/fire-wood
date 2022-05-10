@@ -1,10 +1,7 @@
 footer {
   background: white;
   padding: 0;
-  border-top: 2px solid #e72929;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  border-top: 2px solid #e72929; 
 }
 
 a {
@@ -27,13 +24,3 @@ a.logo {
   padding: 1em;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-}
-
-nav ul li a {
-  padding: 1em;
-  display: inline-block;
-  font-weight: bold;
-}
