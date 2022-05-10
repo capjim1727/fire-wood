@@ -15,6 +15,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { DisplayComponent } from './display/display.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { DisplayComponent } from './display/display.component';
     FooterComponent,
     MapComponent,
     DisplayComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,45 +1,45 @@
-<app-not-found [visible]="!cart || cart.items.length <=0" notFoundMessage="Cart Empty!" resetLinkText="Go To Homepage"></app-not-found>
-<div *ngIf="cart && cart.items.length > 0" class="container">
-    <ul>
-        <li *ngFor="let cartItem of cart.items">
+    <app-not-found [visible]="!cart || cart.items.length <=0" notFoundMessage="Cart Empty!" resetLinkText="Go To Homepage"></app-not-found>
+    <div *ngIf="cart && cart.items.length > 0" class="container">
+        <ul>
+            <li *ngFor="let cartItem of cart.items">
+                <div>
+                    <img [src]="cartItem.wood.imageUrl" [alt]="cartItem.wood.name">
+                </div>
+                <div>
+                    <a routerLink="/wood/{{cartItem.wood.id}}">
+                        {{cartItem.wood.name}}
+                    </a>
+                </div>
+        
+                <div>
+                    <select #quantitySelect (change)="changeQuantity(cartItem,
+                    quantitySelect.value)">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+        
+                <div>
+                    {{cartItem.price | currency}}
+                </div>
+        
+                <div>
+                    <button class="remove-button" (click)="removeFromCart(cartItem)">
+                        Remove
+                    </button>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="checkout">
             <div>
-                <img [src]="cartItem.wood.imageUrl" [alt]="cartItem.wood.name">
+                <div class="woods-count">{{cart.items.length}}</div>
+                <div class="total-price">{{cart.totalPrice | currency}}</div>
+                <app-checkout></app-checkout>
             </div>
-            <div>
-                <a routerLink="/wood/{{cartItem.wood.id}}">
-                    {{cartItem.wood.name}}
-                </a>
-            </div>
-    
-            <div>
-                <select #quantitySelect (change)="changeQuantity(cartItem,
-                quantitySelect.value)">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-    
-            <div>
-                {{cartItem.price | currency}}
-            </div>
-    
-            <div>
-                <button class="remove-button" (click)="removeFromCart(cartItem)">
-                    Remove
-                </button>
-            </div>
-        </li>
-    </ul>
-    
-    <div class="checkout">
-        <div>
-            <div class="woods-count">{{cart.items.length}}</div>
-            <div class="total-price">{{cart.totalPrice | currency}}</div>
-            <app-checkout></app-checkout>
         </div>
     </div>
-</div>
 

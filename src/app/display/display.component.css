@@ -1,6 +1,10 @@
-.pic, h1 {
+.pic, h1, p {
     font: sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
+ p {
+     text-align: center;
+ }

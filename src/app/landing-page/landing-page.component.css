@@ -1,0 +1,25 @@
+.container {
+    background-color: white;
+    height: auto;
+}
+
+.pic, h1, p, .about {
+    font: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
+.about {
+    font-size: 20px;
+}
+.img {
+    text-align: center;
+}

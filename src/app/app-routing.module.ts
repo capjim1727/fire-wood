@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MapComponent } from './map/map.component';
 import { DisplayComponent } from './display/display.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'search/:searchTerm', component:HomeComponent},
   {path: 'tag/:tag', component:HomeComponent},
   {path: 'wood/:id', component:WoodPageComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'checkout', component: CheckoutComponent },
   {path: 'wood-page', component: WoodPageComponent },
   { path: 'map', component: MapComponent },
-  {path: 'display', component: DisplayComponent},
+  { path: 'display', component: DisplayComponent },
+  {path: '', component: LandingPageComponent,}
 ];
 
 @NgModule({
