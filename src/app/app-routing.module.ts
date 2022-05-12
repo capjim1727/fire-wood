@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: 'cart-page', component:CartPageComponent},
   {path: 'checkout', component: CheckoutComponent },
   {path: 'wood-page', component: WoodPageComponent },
-  { path: 'map', component: MapComponent },
-  { path: 'display', component: DisplayComponent },
+  {path: 'map', component: MapComponent },
+  {path: 'display', component: DisplayComponent },
   {path: '', component: LandingPageComponent,}
 ];
 

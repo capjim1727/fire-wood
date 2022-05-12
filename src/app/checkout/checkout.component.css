@@ -6,6 +6,7 @@ button {
     opacity: .7;
     outline: none;
     justify-content: space-between;
+    height: 2rem;
 }
 
 button:hover{

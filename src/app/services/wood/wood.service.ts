@@ -19,10 +19,12 @@ export class WoodService {
 
   getAllTags(): Tag[] {
     return [
-      { name: 'All', count: 6 },
+      { name: 'All', count: 10 },
       { name: 'Cherry', count: 2 },
       { name: 'Pecan', count: 2 },
       { name: 'Oak', count: 2 },
+      { name: 'Hickory', count: 2 },
+      { name: 'Apple', count: 2 },
     ];
   }
 
@@ -39,70 +41,70 @@ export class WoodService {
         name: 'Cherry Wood', 
         price: 20,
         imageUrl: '/assets/images/foods/image0.jpeg',
-        tags: ['Cherry'],
+        tags: ['Cherry', 'Wood'],
       },
       {
         id: 2,
         name: 'Pecan Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image1.jpeg',
-        tags: ['Pecan'],
+        tags: ['Pecan', 'Wood'],
       },
       {
         id: 4,
-        name: 'Cherry Wood',
+        name: 'Oak Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image6.jpeg',
-        tags: ['Pecan'],
+        tags: ['Oak', 'Wood'],
       },
       {
         id: 5,
-        name: 'Pecan Wood',
+        name: 'Hickory Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image4.jpeg',
-        tags: ['Cherry'],
+        tags: ['Hickory', 'Wood'],
       },
       {
         id: 6,
-        name: 'Oak Wood',
+        name: 'Apple Wood',
         price: 20, 
         imageUrl: '/assets/images/foods/image5.jpeg',
-        tags: ['Oak'],
+        tags: ['Apple', 'Wood']
       },
        { 
         id: 1,
         name: 'Cherry Wood', 
         price: 20,
         imageUrl: '/assets/images/foods/image0.jpeg',
-        tags: ['Cherry'],
+        tags: ['Cherry', 'Wood'],
       },
       {
         id: 2,
         name: 'Pecan Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image1.jpeg',
-        tags: ['Pecan'],
+        tags: ['Pecan', 'Wood'],
       },
       {
         id: 4,
-        name: 'Cherry Wood',
+        name: 'Oak Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image6.jpeg',
-        tags: ['Pecan'],
+        tags: ['Oak', 'Wood'],
       },
       {
         id: 5,
-        name: 'Pecan Wood',
+        name: 'Hickory Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image4.jpeg',
-        tags: ['Cherry'],
+        tags: ['Hickory', 'Wood'],
       },
       {
         id: 6,
-        name: 'Oak Wood',
+        name: 'Apple Wood',
         price: 20, 
         imageUrl: '/assets/images/foods/image5.jpeg',
-        tags: ['Oak'],
+        tags: ['Apple', 'Wood'],
       },
     ];
   }
