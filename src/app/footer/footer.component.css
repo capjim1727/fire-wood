@@ -16,7 +16,7 @@ a:hover {
 .container {
   margin-top: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 a.logo {

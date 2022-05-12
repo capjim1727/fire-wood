@@ -1,8 +1,13 @@
-.map, .city, .county, p, .img {
+.map, .city, .county, p {
     text-align: center;
     justify-content: space-evenly;
 }
 
 div {
     min-height: 55vh;
+}
+
+img {
+    align-items: center;
+    width: 50vh;
 }
