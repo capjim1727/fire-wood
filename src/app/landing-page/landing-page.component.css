@@ -23,3 +23,15 @@ p {
 .img {
     text-align: center;
 }
+img {
+    border: 1px solid;
+    padding: 0;
+    height: 24rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    overflow: hidden;
+}
