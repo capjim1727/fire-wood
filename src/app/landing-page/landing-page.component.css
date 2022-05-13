@@ -35,3 +35,8 @@ img {
     flex-direction: row;
     overflow: hidden;
 }
+
+.img .truck {
+    min-height: 65vh; 
+    min-width: 70vh;
+}

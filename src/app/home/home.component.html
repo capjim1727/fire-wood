@@ -1,23 +1,24 @@
-<h1>Welcome to Fueled Up Firewood</h1>
-<p class="title">We also deliver. Give us a call today for inquiries!!</p>
-<app-search></app-search>
-<app-tags></app-tags>
-<app-not-found [visible]="!woods || woods.length <=0" resetLinkText="Reset Search"></app-not-found>
-<ul>
-    <li *ngFor="let wood of woods">
-        <a routerLink="/wood/{{wood.id}}">
-            <img src="{{wood.imageUrl}}" alt="">
-            <div class="content">
-                <div class="name">
-                    {{wood.name}}
+<div class="container">
+    <h1>Welcome to Fueled Up Firewood</h1>
+    <p class="title">We also deliver. Give us a call today for inquiries!!</p>
+    <app-search></app-search>
+    <app-tags></app-tags>
+    <app-not-found [visible]="!woods || woods.length <=0" resetLinkText="Reset Search"></app-not-found>
+    <ul>
+        <li *ngFor="let wood of woods">
+            <a routerLink="/wood/{{wood.id}}">
+                <img src="{{wood.imageUrl}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        {{wood.name}}
+                    </div>
+                    <div class="price">
+                        <span>
+                            {{wood.price|currency}}
+                        </span>
+                    </div>
                 </div>
-                <div class="price">
-                    <span>
-                        {{wood.price|currency}}
-                    </span>
-                </div>
-            </div>
-        </a> 
-    </li>
-</ul>
-
+            </a> 
+        </li>
+    </ul>
+</div>

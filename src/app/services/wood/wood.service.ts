@@ -19,12 +19,12 @@ export class WoodService {
 
   getAllTags(): Tag[] {
     return [
-      { name: 'All', count: 10 },
-      { name: 'Cherry', count: 2 },
-      { name: 'Pecan', count: 2 },
-      { name: 'Oak', count: 2 },
-      { name: 'Hickory', count: 2 },
-      { name: 'Apple', count: 2 },
+      { name: 'All', count: 5 },
+      { name: 'Cherry', count: 1 },
+      { name: 'Pecan', count: 1 },
+      { name: 'Oak', count: 1 },
+      { name: 'Hickory', count: 1 },
+      { name: 'Apple', count: 1 },
     ];
   }
 
@@ -51,61 +51,27 @@ export class WoodService {
         tags: ['Pecan', 'Wood'],
       },
       {
-        id: 4,
+        id: 3,
         name: 'Oak Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image6.jpeg',
         tags: ['Oak', 'Wood'],
       },
       {
-        id: 5,
+        id: 4,
         name: 'Hickory Wood',
         price: 20,
         imageUrl: '/assets/images/foods/image4.jpeg',
         tags: ['Hickory', 'Wood'],
       },
       {
-        id: 6,
+        id: 5,
         name: 'Apple Wood',
         price: 20, 
         imageUrl: '/assets/images/foods/image5.jpeg',
         tags: ['Apple', 'Wood']
       },
-       { 
-        id: 1,
-        name: 'Cherry Wood', 
-        price: 20,
-        imageUrl: '/assets/images/foods/image0.jpeg',
-        tags: ['Cherry', 'Wood'],
-      },
-      {
-        id: 2,
-        name: 'Pecan Wood',
-        price: 20,
-        imageUrl: '/assets/images/foods/image1.jpeg',
-        tags: ['Pecan', 'Wood'],
-      },
-      {
-        id: 4,
-        name: 'Oak Wood',
-        price: 20,
-        imageUrl: '/assets/images/foods/image6.jpeg',
-        tags: ['Oak', 'Wood'],
-      },
-      {
-        id: 5,
-        name: 'Hickory Wood',
-        price: 20,
-        imageUrl: '/assets/images/foods/image4.jpeg',
-        tags: ['Hickory', 'Wood'],
-      },
-      {
-        id: 6,
-        name: 'Apple Wood',
-        price: 20, 
-        imageUrl: '/assets/images/foods/image5.jpeg',
-        tags: ['Apple', 'Wood'],
-      },
+
     ];
   }
 }
